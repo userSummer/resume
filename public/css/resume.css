@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body{
+    background-color: #F5F5F5;
+    font-family: "微软雅黑";
+    color:#4A4A4B;
+}
+/*设置版心*/
+#typeArea{
+    padding-top: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+
+#header{
+    width: 100%;
+    height: 100%;
+}
+/*头部横线*/
+#header .head_line{
+    width: 100%;
+    height: 15px;
+    background-color: #AFA07C;
+    margin: 0 auto;
+}
+
+/*头部左侧个人信息*/
+#header .message {
+    font-size: 16px;
+    width: 100%;
+}
+#header .message .container{
+    width: 100%;
+}
+#header .message .message-l{
+    background-color: #323D4F;
+    color:#AEA17F;
+    padding-bottom: 20px;
+}
+#header .message .message-l .head-img{
+    width: 200px;
+    height: 200px;
+    margin: 20px auto 0;
+    border-radius: 50%;
+    overflow: hidden;
+}
+#header .message .message-l p,#header .message .message-l h3{
+    line-height: 50px;
+    padding-left: 10px;
+}
+#header .message .message-l .head-img img{
+    width: 200px;
+}
+/*头部右侧信息*/
+#header .message .message-r .resume-text{
+    height: 55px;
+    width: 100%;
+    background: url("../img/resume.png") no-repeat center;
+    background-size: contain;
+    margin-top: 70px;
+}
+#header .message .message-r .item .item-tit{
+    height: 30px;
+    padding-left: 10px;
+    line-height: 30px;
+    font-weight: 600;
+}
+#header .message .message-r .item:nth-child(2) .item-tit{
+    border-left: 10px solid #AFA07C;
+    color: #AFA07C;
+}
+#header .message .message-r .item:nth-child(3) .item-tit{
+    border-left:10px solid #FCBF00;
+    color: #FCBF00;
+}
+
+#header .message .message-r .item .item-content{
+    line-height: 30px;
+}
+
+/*校园展示轮播图*/
+#school{
+    width: 100%;
+}
+#school .show-tit{
+    border-left: 10px solid #1F93C2;
+    color:#1F93C2;
+    height: 30px;
+    padding-left: 10px;
+    line-height: 30px;
+    font-weight: 600;
+}
+
+#school #carousel{
+    width: 100%;
+}
+#school #carousel .imgItem img{
+    width: 100%;
+}
+@media screen and (min-width: 900px){
+    #school #carousel .imgItem{
+        height: 300px;
+    }
+}
+
+#skill{
+    width: 100%;
+}
+#skill .container{
+    width: 100%;
+}
+#skill h3{
+    height: 30px;
+    padding-left: 10px;
+    line-height: 30px;
+    font-weight: 600;
+}
+#skill p{
+    line-height: 25px;
+}
+#skill p span{
+    font-size: 18px;
+}
+#skill h3.bl1{
+    border-left: 10px solid #44AB47;
+    color:#44AB47;
+}
+#skill h3.bl2{
+    border-left: 10px solid #FD5F2F;
+    color:#FD5F2F;
+}
+
+
+#floor{
+    width: 80px;
+    height: 200px;
+    position: fixed;
+    top:50%;
+    right: 5px;
+    margin-top: -100px;
+}
+#floor li{
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-bottom: 1px solid #CCCCCC;
+    margin: 2px 0;
+}
+.hei{
+    color:#AEA17F;
+}
+.yellow{
+    color:#FCBF00;
+}
+.blue{
+    color:#1F93C2;
+}
+.green{
+    color:#44AB47;
+}
+#floor li:nth-child(1):hover{
+    background: #AEA17F;
+    font-weight: 600;
+    color:white;
+}
+
+#floor li:nth-child(2):hover{
+    background: #FCBF00;
+    font-weight: 600;
+    color:white;
+}
+#floor li:nth-child(3):hover{
+    background: #1F93C2;
+    font-weight: 600;
+    color:white;
+}
+#floor li:nth-child(4):hover{
+    background: #44AB47;
+    font-weight: 600;
+    color:white;
+}
+#floor li:nth-child(5):hover{
+    background: #CCCCCC;
+    font-weight: 600;
+    color:white;
+}
+
+.active{
+    font-weight: 600;
+    color:white;
+}
+.bgH{
+    background-color:#AEA17F;
+}
+.bgY{
+    background-color:#FCBF00;
+}
+.bgB{
+    background-color:#1F93C2;
+}
+.bgG{
+    background-color:#44AB47;
+}
+.bgD{
+    background-color:#CCCCCC;
+}
+
+@media screen and (max-width: 900px){
+    #floor{
+        display: none;
+    }
+}
