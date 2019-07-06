@@ -14,6 +14,8 @@ function drewEle(){
             this.left = options.left;
             this.top = options.top;
 
+            this.tl = 0;
+            this.tt = 0;
             //起始大小
             this.size = _.random(60,100);
 
@@ -39,7 +41,7 @@ function drewEle(){
                 position: 'absolute',
                 left: this.left + 'px',
                 top: this.top + 'px',
-
+                transform: 'translate('+this.tl+"px"+','+this.tt+"px"+')'
             })
         },
         move:function(){
@@ -52,8 +54,12 @@ function drewEle(){
 
              }*/
             this.size-=this.sd;
-            this.left+=this.LD;
-            this.top+=this.TD;
+            this.tl-=this.LD;
+            this.tt-=this.TD;
+
+            $(this).css({
+                transform: 'translate('+this.tl+"px"+','+this.tt+"px"+')'
+            })
 
             if(this.size<=0){
                 arr =  _.without(arr,this);
