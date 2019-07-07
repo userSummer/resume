@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3bbd9ca4-dbac-4010-986b-f2ed7e5950f3" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/public/img/Thumbs.db" afterPath="$PROJECT_DIR$/public/img/Thumbs.db" />
-      <change beforePath="$PROJECT_DIR$/public/img/me.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/views/resume.ejs" afterPath="$PROJECT_DIR$/views/resume.ejs" />
+      <change beforePath="$PROJECT_DIR$/public/js/index.js" afterPath="$PROJECT_DIR$/public/js/index.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,49 +16,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.ejs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/index.ejs">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../resume/public/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="resume.ejs" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/views/resume.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="18" column="68" lean-forward="false" selection-start-line="18" selection-start-column="68" selection-end-line="18" selection-end-column="68" />
+            <state relative-caret-position="84">
+              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="137" selection-end-column="1" />
               <folding>
-                <element signature="e#1691#1697#0#HTML" expanded="true" />
-                <element signature="e#1697#1703#0#HTML" expanded="true" />
-                <element signature="e#1703#1709#0#HTML" expanded="true" />
-                <element signature="e#1709#1715#0#HTML" expanded="true" />
-                <element signature="e#1715#1721#0#HTML" expanded="true" />
-                <element signature="e#1721#1727#0#HTML" expanded="true" />
-                <element signature="e#1727#1733#0#HTML" expanded="true" />
-                <element signature="e#1733#1739#0#HTML" expanded="true" />
-                <element signature="e#1919#1925#0#HTML" expanded="true" />
-                <element signature="e#1925#1931#0#HTML" expanded="true" />
-                <element signature="e#1931#1937#0#HTML" expanded="true" />
-                <element signature="e#1937#1943#0#HTML" expanded="true" />
-                <element signature="e#1943#1949#0#HTML" expanded="true" />
-                <element signature="e#1949#1955#0#HTML" expanded="true" />
-                <element signature="e#1955#1961#0#HTML" expanded="true" />
-                <element signature="e#1961#1967#0#HTML" expanded="true" />
+                <element signature="n#!!block;n#drewEle#0" expanded="false" />
+                <element signature="e#233#674#0" expanded="false" />
+                <element signature="e#699#1186#0" expanded="false" />
+                <element signature="e#1211#1760#0" expanded="false" />
+                <element signature="e#1225#1453#0" expanded="false" />
+                <element signature="e#1571#1660#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../../web全栈/ES6/day1/炫彩小球/index.html">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="97">
-              <caret line="35" column="40" lean-forward="false" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
-              <folding />
+            <state relative-caret-position="84">
+              <caret line="137" column="1" lean-forward="false" selection-start-line="137" selection-start-column="1" selection-end-line="137" selection-end-column="1" />
+              <folding>
+                <element signature="n#!!block;n#drewEle#0" expanded="false" />
+                <element signature="e#233#674#0" expanded="false" />
+                <element signature="e#699#1186#0" expanded="false" />
+                <element signature="e#1211#1760#0" expanded="false" />
+                <element signature="e#1225#1453#0" expanded="false" />
+                <element signature="e#1571#1660#0" expanded="false" />
+                <element signature="n#!!block;n#getPosition#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -94,8 +79,8 @@
         <option value="$PROJECT_DIR$/public/js/resume.js" />
         <option value="$PROJECT_DIR$/../../../web全栈/ES6/day1/炫彩小球/index.html" />
         <option value="$PROJECT_DIR$/public/css/index.css" />
-        <option value="$PROJECT_DIR$/public/js/index.js" />
         <option value="$PROJECT_DIR$/views/resume.ejs" />
+        <option value="$PROJECT_DIR$/public/js/index.js" />
       </list>
     </option>
   </component>
@@ -108,7 +93,7 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="width" value="657" />
     <option name="height" value="626" />
@@ -145,12 +130,6 @@
               <item name="resume" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="resume" type="b2602c69:ProjectViewProjectNode" />
-              <item name="resume" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="resume" type="b2602c69:ProjectViewProjectNode" />
@@ -239,15 +218,15 @@
       <workItem from="1562311938610" duration="25112000" />
       <workItem from="1562379537011" duration="4998000" />
       <workItem from="1562468033693" duration="8547000" />
-      <workItem from="1562491165248" duration="1873000" />
+      <workItem from="1562491165248" duration="3838000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="109591000" />
+    <option name="totallyTimeSpent" value="111556000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28794643" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -301,20 +280,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/js/resume.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#64#89#0" expanded="false" />
-            <element signature="e#358#1271#0" expanded="false" />
-            <element signature="e#1320#2456#0" expanded="false" />
-            <element signature="n#!!block;n#slowScroll#0" expanded="false" />
-            <element signature="n#!!block;n#getImg#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/resume.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1512">
@@ -532,19 +497,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="73">
-          <caret line="98" column="15" lean-forward="false" selection-start-line="98" selection-start-column="15" selection-end-line="98" selection-end-column="15" />
-          <folding>
-            <element signature="e#448#1666#0" expanded="false" />
-            <element signature="e#1763#1910#0" expanded="false" />
-            <element signature="e#2129#2303#0" expanded="false" />
-            <element signature="n#!!block;n#getPosition#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../../web全栈/ES6/day1/炫彩小球/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="97">
@@ -582,6 +534,37 @@
             <element signature="e#1949#1955#0#HTML" expanded="true" />
             <element signature="e#1955#1961#0#HTML" expanded="true" />
             <element signature="e#1961#1967#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../resume/public/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="137" selection-end-column="1" />
+          <folding>
+            <element signature="n#!!block;n#drewEle#0" expanded="false" />
+            <element signature="e#233#674#0" expanded="false" />
+            <element signature="e#699#1186#0" expanded="false" />
+            <element signature="e#1211#1760#0" expanded="false" />
+            <element signature="e#1225#1453#0" expanded="false" />
+            <element signature="e#1571#1660#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="137" column="1" lean-forward="false" selection-start-line="137" selection-start-column="1" selection-end-line="137" selection-end-column="1" />
+          <folding>
+            <element signature="n#!!block;n#drewEle#0" expanded="false" />
+            <element signature="e#233#674#0" expanded="false" />
+            <element signature="e#699#1186#0" expanded="false" />
+            <element signature="e#1211#1760#0" expanded="false" />
+            <element signature="e#1225#1453#0" expanded="false" />
+            <element signature="e#1571#1660#0" expanded="false" />
+            <element signature="n#!!block;n#getPosition#0" expanded="false" />
           </folding>
         </state>
       </provider>
