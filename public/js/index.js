@@ -3,6 +3,14 @@ window.onload = function(){
 }
 //绘制相关元素
 function drewEle(){
+    var clientH = document.documentElement.clientHeight;
+    var clientW = document.documentElement.clientWidth;
+    var canvas = $('<canvas></canvas>').attr({
+        'width':clientW,
+        'height':clientH
+    });
+    $('#drew').append(canvas);
+
     //1.构造函数
     function Dandelion(options) {
         this._init(options);
@@ -13,9 +21,6 @@ function drewEle(){
             //元素的起始坐标
             this.left = options.left;
             this.top = options.top;
-
-            this.tl = 0;
-            this.tt = 0;
             //起始大小
             this.size = _.random(60,100);
 
@@ -28,21 +33,13 @@ function drewEle(){
             this.src = '/img/dandelion.png'
             this.isDistant = true;
         },
-        drew:function(){
-            var $parent = $('#drew');
-            var $item = $('<img></img>');
-            $parent.append($item);
-            var size = this.size;
-
-            $item.attr('src',this.src);
-            $item.css({
-                width: size + 'px',
-                height: size + 'px',
-                position: 'absolute',
-                left: this.left + 'px',
-                top: this.top + 'px',
-                transform: 'translate('+this.tl+"px"+','+this.tt+"px"+')'
-            })
+        drew:function(fn){
+            var that = this;
+            var imgObj = new Image();
+            imgObj.src = '/img/dandelion.png';
+            imgObj.onload = function(){
+                fn(imgObj,that);
+            }
         },
         move:function(){
             /* if(this.isDistant){
@@ -54,15 +51,13 @@ function drewEle(){
 
              }*/
             this.size-=this.sd;
-            this.tl-=this.LD;
-            this.tt-=this.TD;
-
-            $(this).css({
-                transform: 'translate('+this.tl+"px"+','+this.tt+"px"+')'
-            })
+            this.left+=this.LD;
+            this.top+=this.TD;
 
             if(this.size<=0){
-                arr =  _.without(arr,this);
+                var index = getIndex(arr,this);
+                arr[index] = null;
+                arr =  _.without(arr,arr[index]);
             }
         }
     }
@@ -78,23 +73,25 @@ function drewEle(){
         arr.push(ele);
     }
 
+    var xtr = canvas.get(0).getContext('2d');
     //4 定时清理
     var timer = setInterval(function(){
         //清理上一帧动画
-        for(var i=0;i<$('#drew').children().length;i++){
-            $('#drew').children().get(i).remove();
-        };
 
+        xtr.clearRect(0,0,clientW,clientH);
         //重新绘制下一帧
         for(var i=0;i<arr.length;i++){
-            arr[i].drew();
+
+            arr[i].drew(function(obj,that){
+                xtr.drawImage(obj,that.left,that.top,that.size,that.size);
+            });
             arr[i].move();
         }
 
         if(arr.length === 0){
             clearInterval(timer);
         }
-    },20)
+    },20);
 
 
     //5.监听动画结束
@@ -108,7 +105,7 @@ function drewEle(){
 
             $(this).append(button);
             button.on('click',function(){
-                window.location.href = '/resume'
+                window.location.href = '/resume';
             });
             //右边划入
             button.animate({
@@ -132,7 +129,7 @@ function drewEle(){
 
             })
         })
-    },500);
+    },1500);
 
 }
 
@@ -145,4 +142,12 @@ function getPosition(){
 
     return position;
 
+}
+
+function getIndex(arr,item){
+    for(var i=0;i<arr.length;i++){
+        if(arr[i] === item){
+            return i;
+        }
+    }
 }

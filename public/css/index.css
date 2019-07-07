@@ -52,6 +52,7 @@ body{
     cursor: pointer;
 
     background-color: rgba(0,210,219,.8);
+    z-index: 100;
 }
 #text .arrows{
     animation: arrows 300ms ease infinite;
